@@ -1,0 +1,11 @@
+,field name,Comment
+0,rental_id,Unique identifier of the rental
+1,car_id,Unique identifier of the car
+2,checkin_type,"Flow used for both checkin and checkout. (ie. access and return the car)
+mobile = rental agreement signed on the owner's smartphone
+connect = car equiped with the Connect technology , opened by the driver with his smartphone.
+Note: paper contracts were excluded from the data as we have no data on their delay at checkout and it's negligible use case"
+3,state,canceled means that the rental did not happen (was canceled by the driver or the owner).
+4,delay_at_checkout_in_minutes,Difference in minutes between the rental end time requested by the driver when booking the car and the actual time the driver completed the checkout. Negative values mean that the driver returned the car in advance.
+5,previous_ended_rental_id,id of the previous ended rental of the car (NULL when no previous rental or delay with previous rental higher than 12 hours)
+6,time_delta_with_previous_rental_in_minutes,"Difference in minutes between this rental planned start time and the previous rental planned end time (when lower than 12 hours, NULL if higher)"

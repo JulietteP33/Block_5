@@ -1,0 +1,8 @@
+[browser]
+serverAddress = '0.0.0.0'
+
+[theme]
+base= "dark"
+primaryColor= "#A83494"
+textColor= "#white"
+font= "sans serif"
